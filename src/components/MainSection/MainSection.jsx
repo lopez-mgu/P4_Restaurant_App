@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Carousel, Jumbotron } from "react-bootstrap";
+import { Container, Carousel} from "react-bootstrap";
 import './MainSection.css'
 
 const MainSection = () => {
@@ -58,9 +58,6 @@ const MainSection = () => {
                     </div>
                 </Container>
 
-                <br />
-                <br />
-                <br />
             </div>
         </>
     )

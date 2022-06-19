@@ -11,7 +11,7 @@ const DateTime = () =>{
         dateTime[ev.name] = ev.value
         localStorage.setItem('CocktailAve' + ev.name, ev.value)
        
-        if(!(localStorage.getItem('CocktailAvedate')===null) && !(localStorage.getItem('CocktailAvetime')===null)){
+        if(!(localStorage.getItem('CocktailAvedate_choose')===null) && !(localStorage.getItem('CocktailAvetime_choose')===null)){
             setSchedule({
                 date: localStorage.getItem('CocktailAvedate_choose'),
                 time: localStorage.getItem('CocktailAvetime_choose')
@@ -26,15 +26,15 @@ const DateTime = () =>{
                 <div className="col-md-4 form-schedule-inputs">
                     <Form.Group controlId="date_to_choose">
                             <Form.Label>Selecciona Fecha</Form.Label>
-                            <Form.Control type="date" name="date_choose" placeholder="Fecha a Elegir" onChange={(e) => {handleDateChange(e.target)}}/>
+                            <Form.Control type="date" name="date_choose" placeholder="Fecha a Elegir" onChange={(e) => handleDateChange(e.target)}/>
                     </Form.Group>
                     <Form.Group controlId="time_to_choose">
                             <Form.Label>Selecciona Horario</Form.Label>
-                            <Form.Control type="time" name="time_choose" placeholder="Horario a Elegir" onChange={(e) => {handleDateChange(e.target)}}/>
+                            <Form.Control type="time" name="time_choose" placeholder="Horario a Elegir" onChange={(e) => handleDateChange(e.target)}/>
                     </Form.Group>
                     <Form.Group controlId="people_to_choose">
                             <Form.Label>Número de Personas</Form.Label>
-                            <Form.Control type="number" name="people_choose" placeholder="Horario a Elegir" onChange={(e) => {handleDateChange(e.target)}}/>
+                            <Form.Control type="number" name="people_choose" placeholder="Número de Personas" onChange={(e) => handleDateChange(e.target)}/>
                     </Form.Group>
                 </div>
                 <div className="col-md-4 form-schedule-display">
