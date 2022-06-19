@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Cards from '../Cards/Cards';
+import Cards from '../Cards/Cards.jsx';
 import { onSnapshot, collection} from 'firebase/firestore';
 import { db } from '../../firebase';
 import { Col, Container, Row } from 'react-bootstrap';

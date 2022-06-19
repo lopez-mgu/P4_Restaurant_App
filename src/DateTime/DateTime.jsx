@@ -23,7 +23,7 @@ const DateTime = () =>{
     return(
         <Form>
             <div className="d-flex container-form-schedule">
-                <div className="col-md-4 form-schedule-inputs">
+                <div className="col-md-6 form-schedule-inputs">
                     <Form.Group controlId="date_to_choose">
                             <Form.Label>Selecciona Fecha</Form.Label>
                             <Form.Control type="date" name="date_choose" placeholder="Fecha a Elegir" onChange={(e) => handleDateChange(e.target)}/>
@@ -37,7 +37,7 @@ const DateTime = () =>{
                             <Form.Control type="number" name="people_choose" placeholder="Número de Personas" onChange={(e) => handleDateChange(e.target)}/>
                     </Form.Group>
                 </div>
-                <div className="col-md-4 form-schedule-display">
+                <div className="col-md-6 form-schedule-display">
                     {(() => {
                         if(new Date(schedule.date + " " + schedule.time).getTime() >= new Date().getTime()){
 

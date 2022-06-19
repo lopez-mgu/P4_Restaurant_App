@@ -46,12 +46,10 @@ const MainSection = () => {
                     </div>
                     <div className="main-section-box">
                         <div className="box-since">
-                            <span></span>
                             <p>Desde</p>
                             <h5>2022</h5>       
                         </div>
                         <div className="box-location">
-                            <span></span>
                             <p>Ubicación</p>
                             <h5>Ciudad Chihuahua</h5>       
                         </div>
